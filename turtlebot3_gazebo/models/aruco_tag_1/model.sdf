@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aruco_tag_1">
+    <static>true</static>
+    <link name="aruco_tag_link">
+      <visual name="aruco_tag_visual">
+        <geometry>
+          <plane>
+            <size>0.15 0.15</size> <!-- 15cm x 15cm tag -->
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://aruco_tag_1/scripts</uri>
+            <name>tag36_11</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="aruco_tag_collision">
+        <geometry>
+          <plane>
+            <size>0.15 0.15</size>
+          </plane>
+        </geometry>
+      </collision>
+      <pose>0 0 0.075 0 0 0</pose> <!-- Raise the tag above ground -->
+    </link>
+  </model>
+</sdf>
