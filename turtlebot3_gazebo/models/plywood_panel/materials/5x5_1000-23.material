@@ -1,4 +1,4 @@
-material texture/00000
+material 5x5_1000-23
 {
   receive_shadows on
 	technique
@@ -13,7 +13,7 @@ material texture/00000
 
 			texture_unit
 			{
-				texture ../textures/tag36h11/tag36_11_00000.png
+				texture ../textures/5x5_1000-23.png
 				filtering anistropic //defines the type of filter
                                 max_anisotropy 2 //sets level of filtering
 			}

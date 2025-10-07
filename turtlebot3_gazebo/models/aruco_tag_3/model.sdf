@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <model name="aruco_tag_1">
+  <model name="aruco_tag_3">
     <static>true</static>
     <link name="link">
       <collision name="collision">
@@ -20,9 +20,9 @@
         </geometry>
         <material>
           <script>
-            <uri>model://aruco_tag_1/scripts</uri>
-            <uri>model://aruco_tag_1/texture</uri>
-            <name>6x6_1000-23</name>
+            <uri>model://aruco_tag_3/scripts</uri>
+            <uri>model://aruco_tag_3/texture</uri>
+            <name>6x6_1000-19</name>
           </script>
         </material>
       </visual>

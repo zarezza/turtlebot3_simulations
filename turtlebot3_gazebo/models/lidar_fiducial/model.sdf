@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='lidar_fiducial'>
+    <static>true</static>
+    <link name='link'>
+      <visual name='vis'>
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.10</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1</ambient>
+          <diffuse>0.8 0.1 0.1 1</diffuse>
+        </material>
+      </visual>
+      <collision name='col'>
+        <geometry>
+          <cylinder>
+            <radius>0.015</radius>
+            <length>0.10</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <!-- Place center around 0,0, z at typical 2D LiDAR height (approx 0.12 m for TB3) -->
+      <pose>0 0 0.12 0 0 0</pose>
+      <!-- Make it more reflective to LiDAR if supported -->
+      <laser_retro>1.0</laser_retro>
+    </link>
+  </model>
+</sdf>

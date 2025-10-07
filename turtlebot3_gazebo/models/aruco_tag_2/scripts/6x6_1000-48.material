@@ -1,0 +1,23 @@
+material 6x6_1000-48
+{
+  receive_shadows on
+	technique
+	{
+		pass
+		{
+
+			ambient 0.8 1.0 0.8 1.0
+			diffuse 0.8 1.0 0.8 1.0
+			specular 0.1 0.1 0.1 1.0 12.5
+            emissive 0.01 0.01 0.01  1.000000
+
+			texture_unit
+			{
+				// Expect the tag texture in the model's texture/ folder
+				texture 6x6_1000-48.png
+				filtering anisotropic
+				max_anisotropy 16
+			}
+		}
+	}
+}
